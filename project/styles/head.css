@@ -1,0 +1,212 @@
+.searchbox {
+  display: block;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(222,222,222);
+  z-index: 1;
+
+}
+
+.leftside {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.hamim {
+  width: 24px;
+  height: 24px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.youim {
+  width: 90px;
+  height: 50px;
+}
+
+.middleside {
+  flex: 1;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbox {
+  flex: 1;
+  display: inline-block;
+  background-color: rgb(255,255,255);
+  width: 0;
+  height: 36px;
+  margin-left: 20px;
+  padding-left: 10px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(204,204,204);
+  box-shadow: inset 1px 1px 5px rgba(0,0,0,0.1);
+
+
+}
+
+.searchbox::placeholder {
+  font-family: Roboto;
+  font-size: 16px;
+
+}
+
+.maglens {
+  width: 20px;
+
+}
+
+.voicepic {
+  width: 20px;
+  border: none;
+
+}
+
+.searchbutton {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  background-color: rgb(255,255,255);
+  width: 50px;
+  height: 39px;
+  margin-left: -1px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tooltip {
+  background-color: rgb(108, 108, 108);
+  border-radius: 2px;
+  color:white;
+  padding-left: 5px;
+  padding-top: 8px;
+  padding-bottom:8px;
+  padding-right: 5px;
+  position: absolute;
+  bottom: -45px;
+  font-family: Roboto;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.13s;
+  pointer-events: none;
+  white-space: nowrap;
+
+}
+
+.searchbutton:hover .tooltip,
+.voicebutton:hover .tooltip,
+.upload:hover .tooltip,
+.youapp:hover .tooltip,
+.bell:hover .tooltip {
+  opacity: 0.9;
+}
+
+.voicebutton {
+  border: none;
+  border-radius: 25px;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+}
+
+
+
+.rightside {
+  width: 190px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  flex-shrink: 0;
+}
+
+.upbut {
+  width: 25px;
+  height: 25px;
+
+}
+
+.upload {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.youapp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.apps {
+  width: 25px;
+  height: 25px;
+
+
+}
+
+.noti {
+  width: 25px;
+  height: 25px;
+
+}
+
+.bell {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.bellno {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  font-family: Roboto,arial;
+  border-radius: 10px;
+  font-size: 7px;
+  background-color: rgb(186, 22, 22);
+  color: rgb(255, 255, 255);
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+}
+
+.signin {
+  width: 30px;
+  height: 30px;
+
+
+}
+
